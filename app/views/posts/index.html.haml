@@ -1,0 +1,23 @@
+.col
+  %h1 Posts list
+  = search_form_for @q do |f|
+    = f.label :title_cont
+    = f.search_field :title_cont
+    = f.submit
+
+  %table.table.table-striped
+    %thead
+      %th= sort_link(@q, :title)
+      %th Published
+      %th= sort_link(@q, :created_at)
+      %th= sort_link(@q, :updated_at)
+    %tbody
+      - @posts.each do |post|
+        %tr
+          %th= post.title
+          %th= post.published
+          %th= post.created_at
+          %th= post.updated_at
+
+= paginate @posts
+
