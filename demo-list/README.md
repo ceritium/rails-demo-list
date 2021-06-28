@@ -1,11 +1,11 @@
 # README
 
-Demo rails app to explore different approaches to implement a list with pagination, sorts, and filters.
+Demo rails app to explore different approaches for handle a list with pagination, sorts and filters.
 
 ## Details
 
-It is the base, it includes the default setup with turbolinks.
+Disable turbolinks.
 
 Features:
-- Pagination and sort links are handled by turbolinks.
+- Turbolinks is disabled so links for pagination and sorting reload totally the page.
 - Search submit is native and the page is totally reloaded.

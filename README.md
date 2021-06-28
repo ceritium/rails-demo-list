@@ -4,8 +4,8 @@ Demo rails app to explore different approaches to implement a list with paginati
 
 ## Details
 
-It is the base, it includes the default setup with turbolinks.
+Disable turbolinks.
 
 Features:
-- Pagination and sort links are handled by turbolinks.
+- Turbolinks is disabled so links for pagination and sorting reload totally the page.
 - Search submit is native and the page is totally reloaded.
