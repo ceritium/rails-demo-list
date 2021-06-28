@@ -4,8 +4,8 @@ Demo rails app to explore different approaches to implement a list with paginati
 
 ## Details
 
-Disable turbolinks.
+Enable turbolinks again, handle GET forms with data-remote = true
 
 Features:
-- Turbolinks is disabled so links for pagination and sorting reload totally the page.
-- Search submit is native and the page is totally reloaded.
+- Links handled by turbolinks
+- GET forms handled by turbolinks
