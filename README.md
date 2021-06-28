@@ -4,7 +4,17 @@ Demo rails app to explore different approaches to implement a list with paginati
 
 ## Details
 
-Enable turbolinks again, handle GET forms with data-remote = true
+Replace Turbolinks with TurboDrive.
+
+Based on https://github.com/hotwired/turbo-rails
+
+```
+Add the turbo-rails gem to your Gemfile: gem 'turbo-rails'
+Run ./bin/bundle install
+Run ./bin/rails turbo:install
+```
+- Remove data-remote from form
+- Remove `turbolinks:load` event listener
 
 Features:
 - Links handled by turbolinks
